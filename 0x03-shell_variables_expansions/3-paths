@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$PATH" | awk -F':' '{count=0; for (i=1; i<=NF; i++) if ($i != "") count++; print count}'
+x="$PATH"; IFS=':' read -ra p <<< "$x" && printf "%s\n" "${p[@]}" | grep -v '^$' | wc -l
