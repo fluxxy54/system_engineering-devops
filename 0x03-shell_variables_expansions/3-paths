@@ -1,2 +1,2 @@
 #!/bin/bash
-x="$PATH"; IFS=':' read -ra p <<< "$x" && printf "%s\n" "${p[@]}" | grep -v '^$' | wc -l
+echo "$PATH" | tr ':' '\n' | grep -v '^$' | wc -l
