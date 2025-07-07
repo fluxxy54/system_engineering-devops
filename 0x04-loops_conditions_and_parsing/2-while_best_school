@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # ss
 i=1
 while [ $i -le 10 ]; do
