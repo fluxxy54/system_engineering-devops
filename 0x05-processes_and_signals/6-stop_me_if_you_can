@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-#AS
-pid=$(pgrep -f 4-to_infinity_and_beyond)
-[ -n "$pid" ] && echo > /proc/"$pid"/fd/0
+# Kills one instance of the 4-to_infinity_and_beyond script without using kill or killall
+
+pkill -n 4-to_infinity_and_beyond
+pgrep -c 4-to_infinity_and_beyond
