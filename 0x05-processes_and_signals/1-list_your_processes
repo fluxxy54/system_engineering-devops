@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-#asdadasd
-ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
+# List all running processes with hierarchy in a user-friendly format
+
+ps -eo user,lstart,cmd --forest | sed '1s/LSTART/STARTED/'
