@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#asa
-pkill -f 7-highlander
