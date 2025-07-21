@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Shows all currently running processes: only user and command (no time, no PID, no memory)
+# Displays users of currently running processes (header + usernames only)
 
-ps -eo user,command
+echo "USER"
+ps -eo user --no-headers
