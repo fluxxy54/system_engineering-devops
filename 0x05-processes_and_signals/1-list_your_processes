@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# List all running processes with hierarchy in a user-friendly format
+# Shows all currently running processes: only user and command (no time, no PID, no memory)
 
-ps -eo user,lstart,cmd --forest | sed '1s/LSTART/STARTED/'
+ps -eo user,command
